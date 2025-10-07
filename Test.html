@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 20px;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #fff;
+      text-decoration: none;
+    }
+    main {
+      margin: 20px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #222;
+      color: #fff;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+
+
+
+<script type="module" defer>
+  import Chatbot from "https://cdn.n8nchatui.com/v1/embed.js";
+  Chatbot.init({
+    "n8nChatUrl": "http://localhost:5678/webhook/57ff2cc0-04da-4c72-aba5-0ffdc1ad3df6/chat",
+    "metadata": {}, // Include any custom data to send with each message to your n8n workflow
+    "theme": {
+      "button": {
+        "backgroundColor": "#ffffff",
+        "right": 20,
+        "bottom": 20,
+        "size": 50,
+        "iconColor": "#373434",
+        "customIconSrc": "https://www.svgrepo.com/show/339963/chat-bot.svg",
+        "customIconSize": 50,
+        "customIconBorderRadius": 5,
+        "autoWindowOpen": {
+          "autoOpen": true,
+          "openDelay": 2
+        },
+        "borderRadius": "circle"
+      },
+      "tooltip": {
+        "showTooltip": true,
+        "tooltipMessage": "Need help with sewing solutions? I’m here.",
+        "tooltipBackgroundColor": "#fff9f6",
+        "tooltipTextColor": "#1c1c1c",
+        "tooltipFontSize": 15
+      },
+      "chatWindow": {
+        "borderRadiusStyle": "rounded",
+        "avatarBorderRadius": 15,
+        "messageBorderRadius": 5,
+        "showTitle": true,
+        "title": "HCA Assistant",
+        "titleAvatarSrc": "https://www.svgrepo.com/show/339963/chat-bot.svg",
+        "avatarSize": 30,
+        "welcomeMessage": "Need help with sewing solutions? I’m here.",
+        "errorMessage": "Please connect me to n8n first",
+        "backgroundColor": "#ffffff",
+        "height": 600,
+        "width": 400,
+        "fontSize": 16,
+        "starterPrompts": [
+          "Explore DUKE Machines",
+          "Contact Sales"
+        ],
+        "starterPromptFontSize": 15,
+        "renderHTML": false,
+        "clearChatOnReload": false,
+        "showScrollbar": false,
+        "botMessage": {
+          "backgroundColor": "#f36539",
+          "textColor": "#fafafa",
+          "showAvatar": true,
+          "avatarSrc": "https://www.svgrepo.com/show/334455/bot.svg",
+          "showCopyToClipboardIcon": false
+        },
+        "userMessage": {
+          "backgroundColor": "#fff6f3",
+          "textColor": "#050505",
+          "showAvatar": true,
+          "avatarSrc": "https://www.svgrepo.com/show/532363/user-alt-1.svg"
+        },
+        "textInput": {
+          "placeholder": "Type your query",
+          "backgroundColor": "#ffffff",
+          "textColor": "#1e1e1f",
+          "sendButtonColor": "#f36539",
+          "maxChars": 250,
+          "maxCharsWarningMessage": "You exceeded the characters limit. Please input less than 50 characters.",
+          "autoFocus": true,
+          "borderRadius": 6,
+          "sendButtonBorderRadius": 50
+        }
+      }
+    }
+    });
+  </script>
+
+
+</body>
+</html>
